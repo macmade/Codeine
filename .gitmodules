@@ -1,0 +1,3 @@
+[submodule "ClangKit"]
+	path = ClangKit
+	url = https://github.com/macmade/ClangKit

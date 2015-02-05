@@ -10,9 +10,11 @@
 	<string>Codeine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>09C3333C864DE0EFBC204323D9350E55F4368529</key>
+		<key>10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55</key>
 		<string>github.com:macmade/Codeine.git</string>
 		<key>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</key>
+		<string>https://github.com/macmade/ClangKit</string>
+		<key>1392F0C6957F9679482DB0C39D75D1041951C973</key>
 		<string>https://github.com/macmade/ClangKit</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>https://github.com/andymatuschak/Sparkle.git</string>
@@ -21,10 +23,12 @@
 	<string>Codeine.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>09C3333C864DE0EFBC204323D9350E55F4368529</key>
+		<key>10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55</key>
 		<string>../..</string>
 		<key>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</key>
 		<string>../..ClangKit</string>
+		<key>1392F0C6957F9679482DB0C39D75D1041951C973</key>
+		<string>../../ClangKit/</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>../..Sparkle</string>
 	</dict>
@@ -33,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>09C3333C864DE0EFBC204323D9350E55F4368529</string>
+	<string>10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>09C3333C864DE0EFBC204323D9350E55F4368529</string>
+			<string>1392F0C6957F9679482DB0C39D75D1041951C973</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ClangKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Codeine</string>
 		</dict>
