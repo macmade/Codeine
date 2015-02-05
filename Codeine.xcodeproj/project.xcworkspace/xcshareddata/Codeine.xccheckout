@@ -28,7 +28,7 @@
 		<key>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</key>
 		<string>../..ClangKit</string>
 		<key>1392F0C6957F9679482DB0C39D75D1041951C973</key>
-		<string>../../ClangKit/</string>
+		<string>../../ClangKit</string>
 		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
 		<string>../..Sparkle</string>
 	</dict>
