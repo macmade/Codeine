@@ -1,0 +1,19 @@
+${LICENSE}
+
+#include <Foundation/Foundation.h>
+#include <iostream>
+
+int main( int argc, char * argv[] )
+{
+    @autoreleasepool
+    {
+        ( void )argc;
+        ( void )argv;
+        
+        NSLog( @"hello, world" );
+        
+        std::cout << "hello, world" << std::endl;
+    }
+    
+    return EXIT_SUCCESS;
+}

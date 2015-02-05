@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>57D68A7B-466C-42E5-8CC2-6ADF0DA9AD15</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Codeine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>09C3333C864DE0EFBC204323D9350E55F4368529</key>
+		<string>github.com:macmade/Codeine.git</string>
+		<key>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</key>
+		<string>https://github.com/macmade/ClangKit</string>
+		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
+		<string>https://github.com/andymatuschak/Sparkle.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Codeine.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>09C3333C864DE0EFBC204323D9350E55F4368529</key>
+		<string>../..</string>
+		<key>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</key>
+		<string>../..ClangKit</string>
+		<key>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</key>
+		<string>../..Sparkle</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:macmade/Codeine.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>09C3333C864DE0EFBC204323D9350E55F4368529</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>09C3333C864DE0EFBC204323D9350E55F4368529</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Codeine</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>122578ACAFCDEB1697C3E926B22E1C334BD55B5F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodeineClangKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodeineSparkle</string>
+		</dict>
+	</array>
+</dict>
+</plist>

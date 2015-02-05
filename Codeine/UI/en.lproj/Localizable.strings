@@ -1,0 +1,279 @@
+/*******************************************************************************
+ * Copyright (c) 2012, Jean-David Gadina - www.xs-labs.com
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *  -   Redistributions of source code must retain the above copyright notice,
+ *      this list of conditions and the following disclaimer.
+ *  -   Redistributions in binary form must reproduce the above copyright
+ *      notice, this list of conditions and the following disclaimer in the
+ *      documentation and/or other materials provided with the distribution.
+ *  -   Neither the name of 'Jean-David Gadina' nor the names of its
+ *      contributors may be used to endorse or promote products derived from
+ *      this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ ******************************************************************************/
+ 
+/* $Id$ */
+
+"AppVersion"                                = "Version %@ (%@)";
+"Places"                                    = "Places";
+"OpenDocuments"                             = "Open Documents";
+"Bookmarks"                                 = "Bookmarks";
+"AddBookmark"                               = "Add bookmark";
+"AddFramework"                              = "Add Framework";
+"AddSharedLibrary"                          = "Add Shared Library";
+"AddStaticLibrary"                          = "Add Static Library";
+"OK"                                        = "OK";
+"Cancel"                                    = "Cancel";
+"Yes"                                       = "Yes";
+"No"                                        = "No";
+"Modified"                                  = "Modified: %@";
+"DeleteAlertTitle"                          = "Delete %@";
+"DeleteAlertText"                           = "Are you sure you want to delete the selected file? This action is not undoable.";
+"DeleteErrorTitle"                          = "Cannot delete file";
+"DeleteErrorText"                           = "The selected file can't be deleted. Please check you have permission to do so.";
+"General"                                   = "General:";
+"Preview"                                   = "Preview:";
+"Permissions"                               = "Permissions:";
+"Label"                                     = "Label:";
+"LanguageC"                                 = "C source file";
+"LanguageCPP"                               = "C++ source file";
+"LanguageObjC"                              = "Objective-C source file";
+"LanguageObjCPP"                            = "Objective-C++ source file";
+"LanguageHeader"                            = "Header file";
+"NotRegistered"                             = "Not registered - Click here";
+"NoEditor"                                  = "No file to display";
+"NoConsole"                                 = "Console not available";
+"ResetThemeAlertTitle"                      = "Reset color themes";
+"ResetThemeAlertText"                       = "Are you sure you want to reset to color themes to the factory defaults? All custom themes will also be deleted.";
+"ColorLabelBackground"                      = "Text background";
+"ColorLabelForeground"                      = "Text foreground";
+"ColorLabelSelection"                       = "Selection highlight";
+"ColorLabelCurrentLine"                     = "Current line highlight";
+"ColorLabelInvisible"                       = "Invisible characters";
+"ColorLabelKeyword"                         = "Keywords";
+"ColorLabelComment"                         = "Comments";
+"ColorLabelPredefined"                      = "Predefined symbols";
+"ColorLabelNumber"                          = "Numbers";
+"ColorLabelString"                          = "Strings and characters";
+"ColorLabelProject"                         = "Project symbols";
+"ColorLabelPreprocessor"                    = "Preprocessor";
+"DiagnosticMessage"                         = "%@ - Line %lu: %@";
+"DiagnosticSeverityFatal"                   = "Fatal error";
+"DiagnosticSeverityError"                   = "Error";
+"DiagnosticSeverityWarning"                 = "Warning";
+"DiagnosticSeverityNotice"                  = "Notice";
+"DiagnosticSeverityIgnored"                 = "Ignored";
+"NoError"                                   = "No error found";
+"CEStringDataSizeTypeBytes"                 = "bytes";
+"CEStringDataSizeTypeKiloBytes"             = "KB";
+"CEStringDataSizeTypeMegaBytes"             = "MB";
+"CEStringDataSizeTypeGigaBytes"             = "GB";
+"CEStringDataSizeTypeTeraBytes"             = "TB";
+"CEStringDataSizeTypePetaBytes"             = "PB";
+"CEStringDataSizeTypeExaBytes"              = "EB";
+"CEStringDataSizeTypeZettaBytes"            = "ZB";
+"CEStringDataSizeTypeYottaBytes"            = "YB";
+"CEStringDataSizeTypeKibiBytes"             = "KiB";
+"CEStringDataSizeTypeMebiBytes"             = "MiB";
+"CEStringDataSizeTypeGibiBytes"             = "GiB";
+"CEStringDataSizeTypeTebiBytes"             = "TiB";
+"CEStringDataSizeTypePebiBytes"             = "PiB";
+"CEStringDataSizeTypeExbiBytes"             = "EiB";
+"CEStringDataSizeTypeZebiBytes"             = "ZiB";
+"CEStringDataSizeTypeYobiBytes"             = "YiB";
+"NSUTF8StringEncoding"                      = "UTF-8";
+"NSUTF16StringEncoding"                     = "UTF-16";
+"NSUTF16BigEndianStringEncoding"            = "UTF-16 (Big Endian)";
+"NSUTF16LittleEndianStringEncoding"         = "UTF-16 (Little Endian)";
+"NSUTF32StringEncoding"                     = "UTF-32";                   
+"NSUTF32BigEndianStringEncoding"            = "UTF-32 (Big Endian)";
+"NSUTF32LittleEndianStringEncoding"         = "UTF-32 (Little Endian)";
+"NSISOLatin1StringEncoding"                 = "ISO Latin 1";
+"NSISOLatin2StringEncoding"                 = "ISO Latin 2";
+"NSASCIIStringEncoding"                     = "ASCII";
+"NSNonLossyASCIIStringEncoding"             = "Non Lossy ASCII";
+"NSMacOSRomanStringEncoding"                = "Mac OS Roman";
+"NSWindowsCP1251StringEncoding"             = "Windows CP 1251 (Cyrillic)";
+"NSWindowsCP1252StringEncoding"             = "Windows CP 1252 (Windows Latin 1)";
+"NSWindowsCP1253StringEncoding"             = "Windows CP 1253 (Greek)";
+"NSWindowsCP1254StringEncoding"             = "Windows CP 1254 (Turkish)";
+"NSWindowsCP1250StringEncoding"             = "Windows CP 1250 (Windows Latin 2)";
+"NSUnicodeStringEncoding"                   = "Unicode";
+"NSNEXTSTEPStringEncoding"                  = "NextStep";
+"NSJapaneseEUCStringEncoding"               = "Japanese EUC";
+"NSISO2022JPStringEncoding"                 = "ISO 2022 JP";
+"NSShiftJISStringEncoding"                  = "Shift JIS";
+"NSSymbolStringEncoding"                    = "Symbol";
+"-Wabi"                                     = "[L10N:-Wabi]";
+"-Waddress"                                 = "[L10N:-Waddress]";
+"-Waddress-of-temporary"                    = "[L10N:-Waddress-of-temporary]";
+"-Waggregate-return"                        = "[L10N:-Waggregate-return]";
+"-Wall"                                     = "[L10N:-Wall]";
+"-Wambiguous-member-template"               = "[L10N:-Wambiguous-member-template]";
+"-Warc"                                     = "[L10N:-Warc]";
+"-Warc-abi"                                 = "[L10N:-Warc-abi]";
+"-Warc-non-pod-memaccess"                   = "[L10N:-Warc-non-pod-memaccess]";
+"-Warc-retain-cycles"                       = "[L10N:-Warc-retain-cycles]";
+"-Warc-unsafe-retained-assign"              = "[L10N:-Warc-unsafe-retained-assign]";
+"-Watomic-properties"                       = "Implicit atomic properties (Objective-C)";
+"-Wattributes"                              = "[L10N:-Wattributes]";
+"-Wavailability"                            = "[L10N:-Wavailability]";
+"-Wbad-function-cast"                       = "[L10N:-Wbad-function-cast]";
+"-Wbind-to-temporary-copy"                  = "[L10N:-Wbind-to-temporary-copy]";
+"-Wbitwise-op-parentheses"                  = "[L10N:-Wbitwise-op-parentheses]";
+"-Wbool-conversions"                        = "[L10N:-Wbool-conversions]";
+"-Wbuiltin-macro-redefined"                 = "[L10N:-Wbuiltin-macro-redefined]";
+"-Wc++-compat"                              = "[L10N:-Wc++-compat]";
+"-Wc++0x-compat"                            = "[L10N:-Wc++0x-compat]";
+"-Wc++0x-extensions"                        = "[L10N:-Wc++0x-extensions]";
+"-Wcast-align"                              = "[L10N:-Wcast-align]";
+"-Wcast-qual"                               = "[L10N:-Wcast-qual]";
+"-Wchar-align"                              = "[L10N:-Wchar-align]";
+"-Wchar-subscripts"                         = "[L10N:-Wchar-subscripts]";
+"-Wcomment"                                 = "[L10N:-Wcomment]";
+"-Wcomments"                                = "[L10N:-Wcomments]";
+"-Wconditional-uninitialized"               = "[L10N:-Wconditional-uninitialized]";
+"-Wconversion"                              = "[L10N:-Wconversion]";
+"-Wctor-dtor-privacy"                       = "[L10N:-Wctor-dtor-privacy]";
+"-Wcustom-atomic-properties"                = "[L10N:-Wcustom-atomic-properties]";
+"-Wdeclaration-after-statement"             = "[L10N:-Wdeclaration-after-statement]";
+"-Wdefault-arg-special-member"              = "[L10N:-Wdefault-arg-special-member]";
+"-Wdelegating-ctor-cycles"                  = "[L10N:-Wdelegating-ctor-cycles]";
+"-Wdelete-non-virtual-dtor"                 = "[L10N:-Wdelete-non-virtual-dtor]";
+"-Wdeprecated"                              = "[L10N:-Wdeprecated]";
+"-Wdeprecated-declarations"                 = "[L10N:-Wdeprecated-declarations]";
+"-Wdeprecated-implementations"              = "[L10N:-Wdeprecated-implementations]";
+"-Wdeprecated-writable-strings"             = "[L10N:-Wdeprecated-writable-strings]";
+"-Wdisabled-optimization"                   = "[L10N:-Wdisabled-optimization]";
+"-Wdiscard-qual"                            = "[L10N:-Wdiscard-qual]";
+"-Wdiv-by-zero"                             = "Division by zero";
+"-Wduplicate-method-arg"                    = "[L10N:-Wduplicate-method-arg]";
+"-Weffc++"                                  = "[L10N:-Weffc++]";
+"-Wempty-body"                              = "[L10N:-Wempty-body]";
+"-Wendif-labels"                            = "[L10N:-Wendif-labels]";
+"-Wexit-time-destructors"                   = "[L10N:-Wexit-time-destructors]";
+"-Wextra"                                   = "[L10N:-Wextra]";
+"-Wextra-tokens"                            = "[L10N:-Wextra-tokens]";
+"-Wformat"                                  = "[L10N:-Wformat]";
+"-Wformat-extra-args"                       = "[L10N:-Wformat-extra-args]";
+"-Wformat-nonliteral"                       = "[L10N:-Wformat-nonliteral]";
+"-Wformat-zero-length"                      = "[L10N:-Wformat-zero-length]";
+"-Wformat=2"                                = "[L10N:-Wformat=2]";
+"-Wfour-char-constants"                     = "[L10N:-Wfour-char-constants]";
+"-Wglobal-constructors"                     = "[L10N:-Wglobal-constructors]";
+"-Wgnu"                                     = "[L10N:-Wgnu]";
+"-Wgnu-designator"                          = "[L10N:-Wgnu-designator]";
+"-Wheader-hygiene"                          = "[L10N:-Wheader-hygiene]";
+"-Widiomatic-parentheses"                   = "[L10N:-Widiomatic-parentheses]";
+"-Wignored-qualifiers"                      = "[L10N:-Wignored-qualifiers]";
+"-Wimplicit"                                = "[L10N:-Wimplicit]";
+"-Wimplicit-atomic-properties"              = "[L10N:-Wimplicit-atomic-properties]";
+"-Wimplicit-function-declaration"           = "[L10N:-Wimplicit-function-declaration]";
+"-Wimplicit-int"                            = "[L10N:-Wimplicit-int]";
+"-Wimport"                                  = "[L10N:-Wimport]";
+"-Wincompatible-pointer-types"              = "[L10N:-Wincompatible-pointer-types]";
+"-Winit-self"                               = "[L10N:-Winit-self]";
+"-Winitializer-overrides"                   = "[L10N:-Winitializer-overrides]";
+"-Winline"                                  = "[L10N:-Winline]";
+"-Wint-to-pointer-cast"                     = "[L10N:-Wint-to-pointer-cast]";
+"-Winvalid-offsetof"                        = "[L10N:-Winvalid-offsetof]";
+"-Winvalid-pch"                             = "[L10N:-Winvalid-pch]";
+"-Wlarge-by-value-copy"                     = "[L10N:-Wlarge-by-value-copy]";
+"-Wliteral-range"                           = "[L10N:-Wliteral-range]";
+"-Wlocal-type-template-args"                = "[L10N:-Wlocal-type-template-args]";
+"-Wlogical-op-parentheses"                  = "[L10N:-Wlogical-op-parentheses]";
+"-Wlong-long"                               = "[L10N:-Wlong-long]";
+"-Wmain"                                    = "[L10N:-Wmain]";
+"-Wmicrosoft"                               = "[L10N:-Wmicrosoft]";
+"-Wmismatched-tags"                         = "[L10N:-Wmismatched-tags]";
+"-Wmissing-braces"                          = "Missing braces";
+"-Wmissing-declarations"                    = "[L10N:-Wmissing-declarations]";
+"-Wmissing-field-initializers"              = "Missing field initializers";
+"-Wmissing-format-attribute"                = "Missing format attributes";
+"-Wmissing-include-dirs"                    = "[L10N:-Wmissing-include-dirs]";
+"-Wmissing-noreturn"                        = "[L10N:-Wmissing-noreturn]";
+"-Wmost"                                    = "[L10N:-Wmost]";
+"-Wmultichar"                               = "[L10N:-Wmultichar]";
+"-Wnested-externs"                          = "[L10N:-Wnested-externs]";
+"-Wnewline-eof"                             = "[L10N:-Wnewline-eof]";
+"-Wnon-gcc"                                 = "[L10N:-Wnon-gcc]";
+"-Wnon-virtual-dtor"                        = "Non-virtual destructors (C++)";
+"-Wnonfragile-abi2"                         = "[L10N:-Wnonfragile-abi2]";
+"-Wnonnull"                                 = "[L10N:-Wnonnull]";
+"-Wnonportable-cfstrings"                   = "[L10N:-Wnonportable-cfstrings]";
+"-Wnull-dereference"                        = "NULL dereference";
+"-Wobjc-nonunified-exceptions"              = "[L10N:-Wobjc-nonunified-exceptions]";
+"-Wold-style-cast"                          = "[L10N:-Wold-style-cast]";
+"-Wold-style-definition"                    = "[L10N:-Wold-style-definition]";
+"-Wout-of-line-declaration"                 = "[L10N:-Wout-of-line-declaration]";
+"-Woverflow"                                = "[L10N:-Woverflow]";
+"-Woverlength-strings"                      = "[L10N:-Woverlength-strings]";
+"-Woverloaded-virtual"                      = "[L10N:-Woverloaded-virtual]";
+"-Wpacked"                                  = "[L10N:-Wpacked]";
+"-Wpadded"                                  = "[L10N:-Wpadded]";
+"-Wparentheses"                             = "[L10N:-Wparentheses]";
+"-Wpointer-arith"                           = "[L10N:-Wpointer-arith]";
+"-Wpointer-to-int-cast"                     = "[L10N:-Wpointer-to-int-cast]";
+"-Wprotocol"                                = "[L10N:-Wprotocol]";
+"-Wreadonly-setter-attrs"                   = "[L10N:-Wreadonly-setter-attrs]";
+"-Wredundant-decls"                         = "[L10N:-Wredundant-decls]";
+"-Wreorder"                                 = "[L10N:-Wreorder]";
+"-Wreturn-type"                             = "[L10N:-Wreturn-type]";
+"-Wselector"                                = "[L10N:-Wselector]";
+"-Wself-assign"                             = "[L10N:-Wself-assign]";
+"-Wsemicolon-before-method-body"            = "[L10N:-Wsemicolon-before-method-body]";
+"-Wsequence-point"                          = "[L10N:-Wsequence-point]";
+"-Wshadow"                                  = "[L10N:-Wshadow]";
+"-Wshorten-64-to-32"                        = "[L10N:-Wshorten-64-to-32]";
+"-Wsign-compare"                            = "[L10N:-Wsign-compare]";
+"-Wsign-promo"                              = "[L10N:-Wsign-promo]";
+"-Wsizeof-array-argument"                   = "[L10N:-Wsizeof-array-argument]";
+"-Wstack-protector"                         = "[L10N:-Wstack-protector]";
+"-Wstrict-aliasing"                         = "[L10N:-Wstrict-aliasing]";
+"-Wstrict-overflow"                         = "[L10N:-Wstrict-overflow]";
+"-Wstrict-prototypes"                       = "[L10N:-Wstrict-prototypes]";
+"-Wstrict-selector-match"                   = "Strict selector matching (Objective-C)";
+"-Wsuper-class-method-mismatch"             = "[L10N:-Wsuper-class-method-mismatch]";
+"-Wswitch"                                  = "[L10N:-Wswitch]";
+"-Wswitch-default"                          = "[L10N:-Wswitch-default]";
+"-Wswitch-enum"                             = "[L10N:-Wswitch-enum]";
+"-Wsynth"                                   = "[L10N:-Wsynth]";
+"-Wtautological-compare"                    = "[L10N:-Wtautological-compare]";
+"-Wtrigraphs"                               = "[L10N:-Wtrigraphs]";
+"-Wtype-limits"                             = "[L10N:-Wtype-limits]";
+"-Wundeclared-selector"                     = "[L10N:-Wundeclared-selector]";
+"-Wuninitialized"                           = "[L10N:-Wuninitialized]";
+"-Wunknown-pragmas"                         = "[L10N:-Wunknown-pragmas]";
+"-Wunnamed-type-template-args"              = "[L10N:-Wunnamed-type-template-args]";
+"-Wunneeded-internal-declaration"           = "[L10N:-Wunneeded-internal-declaration]";
+"-Wunneeded-member-function"                = "[L10N:-Wunneeded-member-function]";
+"-Wunused"                                  = "[L10N:-Wunused]";
+"-Wunused-argument"                         = "[L10N:-Wunused-argument]";
+"-Wunused-exception-parameter"              = "[L10N:-Wunused-exception-parameter]";
+"-Wunused-function"                         = "Unused functions";
+"-Wunused-label"                            = "Unused labels";
+"-Wunused-member-function"                  = "[L10N:-Wunused-member-function]";
+"-Wunused-parameter"                        = "Unused parameters";
+"-Wunused-value"                            = "Unused values";
+"-Wunused-variable"                         = "Unused variables";
+"-Wused-but-marked-unused"                  = "[L10N:-Wused-but-marked-unused]";
+"-Wvariadic-macros"                         = "[L10N:-Wvariadic-macros]";
+"-Wvector-conversions"                      = "[L10N:-Wvector-conversions]";
+"-Wvla"                                     = "[L10N:-Wvla]";
+"-Wvolatile-register-var"                   = "[L10N:-Wvolatile-register-var]";
+"-Wwrite-strings"                           = "[L10N:-Wwrite-strings]";
