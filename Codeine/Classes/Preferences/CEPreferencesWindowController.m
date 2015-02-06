@@ -96,9 +96,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _generalOptionsViewController == nil )
     {
         _generalOptionsViewController = [ CEPreferencesGeneralOptionsViewController new ];
-        
-        [ _generalOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _generalOptionsViewController ];
     }
     
     [ self showView: _generalOptionsViewController.view ];
@@ -111,9 +108,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _editorOptionsViewController == nil )
     {
         _editorOptionsViewController = [ CEPreferencesEditorOptionsViewController new ];
-        
-        [ _editorOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _editorOptionsViewController ];
     }
     
     [ self showView: _editorOptionsViewController.view ];
@@ -126,9 +120,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _compilerOptionsViewController == nil )
     {
         _compilerOptionsViewController = [ CEPreferencesCompilerOptionsViewController new ];
-        
-        [ _compilerOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _compilerOptionsViewController ];
     }
     
     [ self showView: _compilerOptionsViewController.view ];
@@ -141,9 +132,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _linkerOptionsViewController == nil )
     {
         _linkerOptionsViewController = [ CEPreferencesLinkerOptionsViewController new ];
-        
-        [ _linkerOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _linkerOptionsViewController ];
     }
     
     [ self showView: _linkerOptionsViewController.view ];
@@ -156,9 +144,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _fontsAndColorsOptionsViewController == nil )
     {
         _fontsAndColorsOptionsViewController = [ CEPreferencesFontsAndColorsOptionsViewController new ];
-        
-        [ _fontsAndColorsOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _fontsAndColorsOptionsViewController ];
     }
     
     [ self showView: _fontsAndColorsOptionsViewController.view ];
@@ -171,9 +156,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _fileTypesOptionsViewController == nil )
     {
         _fileTypesOptionsViewController = [ CEPreferencesFileTypesOptionsViewController new ];
-        
-        [ _fileTypesOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _fileTypesOptionsViewController ];
     }
     
     [ self showView: _fileTypesOptionsViewController.view ];
@@ -186,9 +168,6 @@ static NSString * const __userInterfaceOptionsItemIdentifier    = @"UserInterfac
     if( _userInterfaceOptionsViewController == nil )
     {
         _userInterfaceOptionsViewController = [ CEPreferencesUserInterfaceOptionsViewController new ];
-        
-        [ _userInterfaceOptionsViewController setNextResponder: self.nextResponder ];
-        [ self setNextResponder: _userInterfaceOptionsViewController ];
     }
     
     [ self showView: _userInterfaceOptionsViewController.view ];
