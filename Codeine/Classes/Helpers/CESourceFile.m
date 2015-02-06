@@ -111,6 +111,13 @@
             _text = [ text retain ];
         }
         
+        if( _language == CESourceFileLanguageNone )
+        {
+            RELEASE_IVAR( _translationUnit );
+            
+            return;
+        }
+        
         if( _translationUnit == nil )
         {
             if( _language == CESourceFileLanguageC )
