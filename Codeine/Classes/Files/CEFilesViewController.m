@@ -326,9 +326,14 @@
     {
         NSAlert * alert;
         
-        alert = [ NSAlert alertWithMessageText: [ NSString stringWithFormat: L10N( "DeleteAlertTitle" ), [ FILE_MANAGER displayNameAtPath: item.file.path ] ] defaultButton: L10N( "OK" ) alternateButton: L10N( "Cancel" ) otherButton: nil informativeTextWithFormat: L10N( "DeleteAlertText" ) ];
+        alert                   = [ NSAlert new ];
+        alert.messageText       = [ NSString stringWithFormat: L10N( "DeleteAlertTitle" ), [ FILE_MANAGER displayNameAtPath: item.file.path ] ];
+        alert.informativeText   = L10N( "DeleteAlertText" );
         
-        if( [ alert runModal ] != NSAlertDefaultReturn )
+        [ alert addButtonWithTitle: L10N( "OK" ) ];
+        [ alert addButtonWithTitle: L10N( "Cancel" ) ];
+        
+        if( [ alert runModal ] != NSAlertFirstButtonReturn )
         {
             return;
         }
@@ -339,8 +344,12 @@
         {
             NSAlert * alert;
             
-            alert            = [ NSAlert alertWithMessageText: L10N( "DeleteErrorTitle" ) defaultButton: L10N( "OK" ) alternateButton: nil otherButton: nil informativeTextWithFormat: L10N( "DeleteErrorText" ) ];
-            alert.alertStyle = NSWarningAlertStyle;
+            alert                   = [ NSAlert new ];
+            alert.messageText       = L10N( "DeleteErrorTitle" );
+            alert.informativeText   = L10N( "DeleteErrorText" );
+            alert.alertStyle        = NSWarningAlertStyle;
+            
+            [ alert addButtonWithTitle: L10N( "OK" ) ];
             
             NSBeep();
             

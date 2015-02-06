@@ -46,7 +46,14 @@
         _languageWindowController = [ CELanguageWindowController new ];
     }
     
-    [ APPLICATION beginSheet: _languageWindowController.window modalForWindow: self.window modalDelegate: self didEndSelector: @selector( didChooseLanguage: ) contextInfo: NULL ];
+    [ self.window beginSheet: _languageWindowController.window completionHandler: ^( NSModalResponse response )
+        {
+            if( response == NSModalResponseOK )
+            {
+                [ self didChooseLanguage: nil ];
+            }
+        }
+    ];
 }
 
 - ( void )didChooseLanguage: ( id )sender
@@ -113,7 +120,7 @@
     else
     {
         license         = [ _languageWindowController.licensePopUp.licenseText stringByTrimmingCharactersInSet: [ NSCharacterSet whitespaceAndNewlineCharacterSet ] ];
-        dateComponents  = [ [ NSCalendar currentCalendar ] components: NSYearCalendarUnit fromDate: [ NSDate date ] ];
+        dateComponents  = [ [ NSCalendar currentCalendar ] components: NSCalendarUnitYear fromDate: [ NSDate date ] ];
         text            = [ text stringByReplacingOccurrencesOfString: @"${LICENSE}" withString: license ];
         userName        = [ [ CEPreferences sharedInstance ] userName ];
         

@@ -35,7 +35,6 @@
 
 - ( void )updateView;
 - ( void )getColorThemes;
-- ( void )resetAlertDidEnd: ( NSAlert * )alert returnCode: ( NSInteger )returnCode contextInfo: ( void * )contextInfo;
 - ( void )createColorChooserViews;
 
 @end

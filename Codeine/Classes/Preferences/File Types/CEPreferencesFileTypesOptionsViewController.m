@@ -71,7 +71,14 @@ NSString * const CEPreferencesCompilerOptionsViewControllerColumnTypeIdentifier 
         _addNewController = [ CEPreferencesFileTypesAddNewViewController new ];
     }
     
-    [ APPLICATION beginSheet: _addNewController.window modalForWindow: self.view.window modalDelegate: self didEndSelector: @selector( didChooseFileType: ) contextInfo: NULL ];
+    [ self.view.window beginSheet: _addNewController.window completionHandler: ^( NSModalResponse response )
+        {
+            if( response == NSModalResponseOK )
+            {
+                [ self didChooseFileType: nil ];
+            }
+        }
+    ];
 }
 
 - ( IBAction )removeFileType: ( id )sender

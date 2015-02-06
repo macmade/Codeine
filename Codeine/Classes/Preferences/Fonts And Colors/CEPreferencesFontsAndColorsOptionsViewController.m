@@ -123,9 +123,36 @@
     
     ( void )sender;
     
-    alert = [ NSAlert alertWithMessageText: L10N( "ResetThemeAlertTitle" ) defaultButton: L10N( "OK" ) alternateButton: L10N( "Cancel" ) otherButton: nil informativeTextWithFormat: L10N( "ResetThemeAlertText" ) ];
+    alert                   = [ NSAlert new ];
+    alert.messageText       = L10N( "ResetThemeAlertTitle" );
+    alert.informativeText   = L10N( "ResetThemeAlertText" );
     
-    [ alert beginSheetModalForWindow: self.view.window modalDelegate: self didEndSelector: @selector( resetAlertDidEnd:returnCode:contextInfo: ) contextInfo: nil ];
+    [ alert addButtonWithTitle: L10N( "OK" ) ];
+    [ alert addButtonWithTitle: L10N( "Cancel" ) ];
+    
+    [ alert beginSheetModalForWindow: self.view.window completionHandler: ^( NSModalResponse response )
+        {
+            NSArray    * items;
+            NSMenuItem * item;
+            
+            if( response == NSAlertFirstButtonReturn )
+            {
+                items = [ _colorThemesPopUp itemArray ];
+                
+                for( item in items )
+                {
+                    if( [ item.representedObject isKindOfClass: [ CEColorTheme class ] ] == YES )
+                    {
+                        [ _colorThemesPopUp removeItemWithTitle: item.title ];
+                    }
+                }
+                
+                [ [ CEApplicationDelegate sharedInstance ] resetColorThemes: nil ];
+                [ self getColorThemes ];
+                [ [ CEPreferences sharedInstance ] setColorsFromColorTheme: [ CEColorTheme defaultColorThemeWithName: @"Codeine - Dark" ] ];
+            }
+        }
+    ];
 }
 
 - ( IBAction )saveTheme: ( id )sender

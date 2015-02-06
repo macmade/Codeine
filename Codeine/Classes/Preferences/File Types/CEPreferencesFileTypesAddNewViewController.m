@@ -75,16 +75,14 @@
     _fileExtension = [ extension copy ];
     _language      = ( CESourceFileLanguage )[ _popUpButton selectedTag ];
     
-    [ self.window orderOut: sender ];
-    [ APPLICATION endSheet: self.window ];
+    [ self.window.sheetParent endSheet: self.window returnCode: NSModalResponseOK ];
 }
 
 - ( IBAction )cancel: ( id )sender
 {
     ( void )sender;
     
-    [ self.window orderOut: sender ];
-    [ APPLICATION endSheet: self.window ];
+    [ self.window.sheetParent endSheet: self.window returnCode: NSModalResponseCancel ];
 }
 
 @end

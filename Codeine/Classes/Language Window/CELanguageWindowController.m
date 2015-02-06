@@ -140,6 +140,8 @@ NSString * const CELanguageWindowControllerTableColumnIdentifierTitle   = @"Titl
 {
     NSInteger languageRow;
     
+    ( void )sender;
+    
     languageRow = [ _languagesTableView selectedRow ];
     
     if( languageRow == NSNotFound )
@@ -185,19 +187,19 @@ NSString * const CELanguageWindowControllerTableColumnIdentifierTitle   = @"Titl
     
     _lineEndings = ( CESourceFileLineEndings )[ [ _lineEndingsMatrix selectedCell ] tag ];
     _encoding    = [ [ [ _encodingPopUp selectedItem ] representedObject ] retain ];
-    
-    [ self.window orderOut: sender ];
-    [ APPLICATION endSheet: self.window ];
+
+    [ self.window.sheetParent endSheet: self.window returnCode: NSModalResponseOK ];
 }
 
 - ( IBAction )cancel: ( id )sender
 {
+    ( void )sender;
+    
     _language    = CESourceFileLanguageNone;
     _lineEndings = CESourceFileLineEndingsUnknown;
     _encoding    = nil;
     
-    [ self.window orderOut: sender ];
-    [ APPLICATION endSheet: self.window ];
+    [ self.window.sheetParent endSheet: self.window returnCode: NSModalResponseCancel ];
 }
 
 @end
