@@ -50,7 +50,7 @@
         item                   = [ self itemWithTitle: encoding.localizedName ];
         item.representedObject = encoding;
         
-        if( encoding.value == [ [ CEPreferences sharedInstance ] textEncoding ] )
+        if( encoding.encodingValue == [ [ CEPreferences sharedInstance ] textEncoding ] )
         {
             [ self selectItem: item ];
         }

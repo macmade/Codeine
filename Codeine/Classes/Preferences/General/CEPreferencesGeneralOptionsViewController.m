@@ -73,7 +73,7 @@
     
     encoding = [ [ _encodingPopUp selectedItem ] representedObject ];
     
-    [ [ CEPreferences sharedInstance ] setTextEncoding: encoding.value ];
+    [ [ CEPreferences sharedInstance ] setTextEncoding: encoding.encodingValue ];
 }
 
 - ( IBAction )setLineEndings: ( id )sender

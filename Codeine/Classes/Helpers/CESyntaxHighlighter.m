@@ -264,11 +264,6 @@
                 
                 [ _textView.layoutManager addTemporaryAttribute: NSForegroundColorAttributeName value: foregroundColor forCharacterRange: token.range ];
                 break;
-                
-            default:
-                
-                [ _textView.layoutManager addTemporaryAttribute: NSForegroundColorAttributeName value: foregroundColor forCharacterRange: token.range ];
-                break;
         }
     }
     

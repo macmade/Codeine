@@ -84,7 +84,6 @@
             break;
             
         case CESourceFileLanguageNone:
-        default:
             
             languageName = nil;
             

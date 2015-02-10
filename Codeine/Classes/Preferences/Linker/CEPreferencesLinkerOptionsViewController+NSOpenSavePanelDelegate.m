@@ -62,12 +62,6 @@
             valid = [ path.pathExtension isEqualToString: @"a" ];
             
             break;
-            
-        default:
-            
-            valid = NO;
-            
-            break;
     }
     
     if( valid == NO )

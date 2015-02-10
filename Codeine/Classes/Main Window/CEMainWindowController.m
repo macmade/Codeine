@@ -46,6 +46,7 @@
 #import "CEHUDView.h"
 #import "CEDocument.h"
 #import "CEDiagnosticsViewController.h"
+#import "CELanguageWindowController.h"
 
 NSString * const CEMainWindowControllerDocumentsArrayKey = @"documents";
 

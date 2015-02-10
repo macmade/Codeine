@@ -33,11 +33,18 @@
 
 #define __NUMBER_OF_TEXT_ENCODINGS  23
 
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wpadded"
+#endif
 struct __textEncoding
 {
     unsigned int value;
     const char * name;
 };
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 
 static struct __textEncoding __encodings[ __NUMBER_OF_TEXT_ENCODINGS ] =
 {
@@ -68,8 +75,8 @@ static struct __textEncoding __encodings[ __NUMBER_OF_TEXT_ENCODINGS ] =
 
 @implementation CETextEncoding
 
-@synthesize value = _value;
-@synthesize name  = _name;
+@synthesize encodingValue = _encodingValue;
+@synthesize name          = _name;
 
 + ( NSArray * )availableEncodings
 {

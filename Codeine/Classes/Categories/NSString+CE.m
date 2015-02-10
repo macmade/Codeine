@@ -232,7 +232,6 @@
            
         case CEStringDataSizeTypeAuto:
         case CEStringDataSizeTypeBytes:
-        default:
             
             return nil;
     }

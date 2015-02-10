@@ -33,6 +33,7 @@
 #import "CEDocument.h"
 #import "CESourceFile.h"
 #import "CEDiagnosticWrapper.h"
+#import "CEHUDView.h"
 
 @implementation CEDiagnosticsViewController( NSTableViewDataSource )
 

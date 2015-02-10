@@ -35,6 +35,8 @@
 #import "CELanguageWindowController+Private.h"
 #import "CEPreferences.h"
 #import "CEBackgroundView.h"
+#import "CETextEncoding.h"
+#import "CELicensePopUpButton.h"
 
 NSString * const CELanguageWindowControllerTableColumnIdentifierIcon    = @"Icon";
 NSString * const CELanguageWindowControllerTableColumnIdentifierTitle   = @"Title";
@@ -130,7 +132,6 @@ NSString * const CELanguageWindowControllerTableColumnIdentifierTitle   = @"Titl
             
         case CESourceFileLanguageNone:
         case CESourceFileLanguageHeader:
-        default:
             
             break;
     }

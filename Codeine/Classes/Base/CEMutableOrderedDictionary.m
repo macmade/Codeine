@@ -79,7 +79,7 @@
     return [ _keys objectEnumerator ];
 }
 
-- ( void )setObject: ( id )object forKey: ( id )key
+- ( void )setObject: ( id )object forKey: ( id< NSCopying > )key
 {
     [ _keys    addObject: key ];
     [ _objects addObject: object ];

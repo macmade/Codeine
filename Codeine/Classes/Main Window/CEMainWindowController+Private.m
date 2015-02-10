@@ -104,7 +104,6 @@
             
         case CESourceFileLanguageC:
         case CESourceFileLanguageNone:
-        default:
             
             template = [ templates stringByAppendingPathComponent: @"C.txt" ];
             break;

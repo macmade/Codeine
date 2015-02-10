@@ -40,6 +40,7 @@
 #import "CEEditorRulerView.h"
 #import "CEDocument.h"
 #import "CESyntaxHighlighter.h"
+#import "CECodeCompletionViewController.h"
 
 @implementation CEEditorViewController
 

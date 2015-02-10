@@ -41,7 +41,7 @@
     RESERVED_IVARS( CETextEncoding, 5 );
 }
 
-@property( atomic, readonly ) NSStringEncoding value;
+@property( atomic, readonly ) NSStringEncoding encodingValue;
 @property( atomic, readonly ) NSString       * name;
 @property( atomic, readonly ) NSString       * localizedName;
 

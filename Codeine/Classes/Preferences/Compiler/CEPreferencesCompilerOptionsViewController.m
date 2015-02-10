@@ -34,6 +34,7 @@
 #import "CEPreferencesCompilerOptionsViewController+NSTableViewDataSource.h"
 #import "CEPreferencesCompilerOptionsViewController+Private.h"
 #import "CEPreferences.h"
+#import "CEMutableOrderedDictionary.h"
 
 NSString * const CEPreferencesCompilerOptionsViewControllerTableViewColumnFlagIdentifier               = @"Flag";
 NSString * const CEPreferencesCompilerOptionsViewControllerTableViewColumnDescriptionIdentifier        = @"Description";

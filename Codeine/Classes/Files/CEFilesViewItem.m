@@ -35,6 +35,7 @@
 #import "CEFilesViewItemFS.h"
 #import "CEFilesViewItemBookmark.h"
 #import "CEPreferences.h"
+#import "CEFile.h"
 
 NSString * const CEFilesViewOpenDocumentsItemName    = @"OpenDocuments";
 NSString * const CEFilesViewPlacesItemName           = @"Places";
@@ -129,10 +130,6 @@ static void __exit( void )
             
             item = [ [ CEFilesViewItemBookmark alloc ] initWithType: type name: name ];
             break;
-            
-        default:
-            
-            item = nil;
     }
     
     [ self release ];

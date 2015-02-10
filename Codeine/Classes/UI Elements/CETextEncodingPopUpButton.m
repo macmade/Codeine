@@ -72,7 +72,7 @@
     item     = [ self selectedItem ];
     encoding = ( CETextEncoding * )( item.representedObject );
     
-    return encoding.value;
+    return encoding.encodingValue;
 }
 
 @end

@@ -175,7 +175,6 @@
                 return [ WORKSPACE iconForFileType: @"h" ];
                 
             case CESourceFileLanguageNone:
-            default:
                 
                 break;
         }
