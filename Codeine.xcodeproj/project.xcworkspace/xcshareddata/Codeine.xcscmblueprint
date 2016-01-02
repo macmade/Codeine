@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1392F0C6957F9679482DB0C39D75D1041951C973" : 0,
+    "122578ACAFCDEB1697C3E926B22E1C334BD55B5F" : 0,
+    "EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402" : 0,
+    "10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57D68A7B-466C-42E5-8CC2-6ADF0DA9AD15",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1392F0C6957F9679482DB0C39D75D1041951C973" : "Codeine\/ClangKit",
+    "122578ACAFCDEB1697C3E926B22E1C334BD55B5F" : "CodeineClangKit",
+    "EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402" : "CodeineSparkle",
+    "10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55" : "Codeine"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Codeine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Codeine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:macmade\/Codeine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10DBADDAD67AAA6C54CE39D49C4CC971B8BF1C55"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/macmade\/ClangKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "122578ACAFCDEB1697C3E926B22E1C334BD55B5F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/macmade\/ClangKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1392F0C6957F9679482DB0C39D75D1041951C973"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andymatuschak\/Sparkle.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF1CF5E1F342919DE309B5C9DAEDDCF1D12D0402"
+    }
+  ]
+}

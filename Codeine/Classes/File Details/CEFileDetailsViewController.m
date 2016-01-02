@@ -126,7 +126,7 @@
 {
     ( void )sender;
     
-    [ WORKSPACE selectFile: _file.path inFileViewerRootedAtPath: nil ];
+    [ WORKSPACE selectFile: _file.path inFileViewerRootedAtPath: @"" ];
 }
 
 - ( IBAction )preview: ( id )sender

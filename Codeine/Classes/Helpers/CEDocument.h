@@ -33,7 +33,6 @@
 #import "CESourceFile.h"
 
 @class CEFile;
-@class CEUUID;
 
 @interface CEDocument: NSObject
 {
@@ -42,7 +41,7 @@
     CEFile       * _file;
     CESourceFile * _sourceFile;
     NSString     * _name;
-    CEUUID       * _uuid;
+    NSUUID       * _uuid;
     
 @private
     
@@ -53,7 +52,7 @@
 @property( atomic, readonly          ) CESourceFile * sourceFile;
 @property( atomic, readonly          ) NSString     * name;
 @property( atomic, readonly          ) NSImage      * icon;
-@property( atomic, readonly          ) CEUUID       * uuid;
+@property( atomic, readonly          ) NSUUID       * uuid;
 
 + ( id )documentWithPath: ( NSString * )path;
 + ( id )documentWithURL: ( NSURL * )url;

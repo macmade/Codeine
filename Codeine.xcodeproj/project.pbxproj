@@ -46,7 +46,6 @@
 		051F2E10159A12DB0027DD4F /* CEAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 051F2E0F159A12DB0027DD4F /* CEAboutWindowController.m */; };
 		051F2E13159A13270027DD4F /* CEAboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051F2E11159A13270027DD4F /* CEAboutWindow.xib */; };
 		051F2E16159A13320027DD4F /* CEPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051F2E14159A13320027DD4F /* CEPreferencesWindow.xib */; };
-		0529BC9715EA68220088B727 /* CEUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529BC9615EA68220088B727 /* CEUUID.m */; };
 		052B91CF15A61F1800F82759 /* CEPreferencesFileTypesOptionsViewController+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B91CE15A61F1800F82759 /* CEPreferencesFileTypesOptionsViewController+Private.m */; };
 		052B91D315A61F2500F82759 /* CEPreferencesFileTypesOptionsViewController+NSTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B91D215A61F2400F82759 /* CEPreferencesFileTypesOptionsViewController+NSTableViewDelegate.m */; };
 		052B91D615A61F3100F82759 /* CEPreferencesFileTypesOptionsViewController+NSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B91D515A61F3000F82759 /* CEPreferencesFileTypesOptionsViewController+NSTableViewDataSource.m */; };
@@ -302,8 +301,6 @@
 		051F2E0F159A12DB0027DD4F /* CEAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEAboutWindowController.m; sourceTree = "<group>"; };
 		051F2E12159A13270027DD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEAboutWindow.xib; sourceTree = "<group>"; };
 		051F2E15159A13320027DD4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEPreferencesWindow.xib; sourceTree = "<group>"; };
-		0529BC9515EA68220088B727 /* CEUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEUUID.h; sourceTree = "<group>"; };
-		0529BC9615EA68220088B727 /* CEUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEUUID.m; sourceTree = "<group>"; };
 		052B91CD15A61F1800F82759 /* CEPreferencesFileTypesOptionsViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CEPreferencesFileTypesOptionsViewController+Private.h"; sourceTree = "<group>"; };
 		052B91CE15A61F1800F82759 /* CEPreferencesFileTypesOptionsViewController+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CEPreferencesFileTypesOptionsViewController+Private.m"; sourceTree = "<group>"; };
 		052B91D115A61F2400F82759 /* CEPreferencesFileTypesOptionsViewController+NSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CEPreferencesFileTypesOptionsViewController+NSTableViewDelegate.h"; sourceTree = "<group>"; };
@@ -1143,8 +1140,6 @@
 				05F75E2A15DAB65100F26DCD /* CESyntaxHighlighter.m */,
 				05F75E2C15DAB75C00F26DCD /* CESyntaxHighlighter+Private.h */,
 				05F75E2D15DAB75C00F26DCD /* CESyntaxHighlighter+Private.m */,
-				0529BC9515EA68220088B727 /* CEUUID.h */,
-				0529BC9615EA68220088B727 /* CEUUID.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1272,7 +1267,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CE;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "XS-Labs";
 			};
 			buildConfigurationList = 05480FA2159A0B32005CFBC5 /* Build configuration list for PBXProject "Codeine" */;
@@ -1529,7 +1524,6 @@
 				050544C815E07B6100697329 /* CEEditorViewController+CEEditorTextViewDelegate.m in Sources */,
 				0535EBDF15E164650058D3A9 /* CECodeCompletionViewController+NSTableViewDelegate.m in Sources */,
 				0535EBE215E164700058D3A9 /* CECodeCompletionViewController+NSTableViewDataSource.m in Sources */,
-				0529BC9715EA68220088B727 /* CEUUID.m in Sources */,
 				05457362166F74AA00B8A79B /* CEInfoWindowCell.m in Sources */,
 				051129B01739AA02005C5118 /* CEPreferencesUserInterfaceOptionsViewController.m in Sources */,
 			);
@@ -1761,7 +1755,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_DEADCODE_UNUSED_OBJC_IVARS = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -1797,6 +1790,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1855,7 +1849,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_DEADCODE_UNUSED_OBJC_IVARS = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -1948,6 +1941,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Codeine/Codeine-Prefix.pch";
 				INFOPLIST_FILE = "Codeine/Codeine-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Codeine;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1960,6 +1954,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Codeine/Codeine-Prefix.pch";
 				INFOPLIST_FILE = "Codeine/Codeine-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Codeine;
 				WRAPPER_EXTENSION = app;
 			};

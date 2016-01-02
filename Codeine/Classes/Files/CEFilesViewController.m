@@ -277,7 +277,7 @@
     
     item = menuItem.representedObject;
     
-    [ WORKSPACE selectFile: item.file.path inFileViewerRootedAtPath: nil ];
+    [ WORKSPACE selectFile: item.file.path inFileViewerRootedAtPath: @"" ];
 }
 
 - ( IBAction )menuActionOpenInDefaultEditor: ( id )sender

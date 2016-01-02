@@ -33,7 +33,6 @@
 #import "CEDocument+Private.h"
 #import "CEFile.h"
 #import "CEPreferences.h"
-#import "CEUUID.h"
 
 @implementation CEDocument
 
@@ -107,7 +106,7 @@
         }
         
         _name = [ _file.name copy ];
-        _uuid = [ CEUUID new ];
+        _uuid = [ NSUUID new ];
     }
     
     return self;
@@ -127,7 +126,7 @@
         }
         
         _name = [ [ self nameForNewDocument ] copy ];
-        _uuid = [ CEUUID new ];
+        _uuid = [ NSUUID new ];
     }
     
     return self;
